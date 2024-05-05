@@ -3,6 +3,7 @@ import { Space_Grotesk } from 'next/font/google'
 import './globals.css'
 import { space } from 'postcss/lib/list'
 import { cn } from '@/lib/utils'
+import Header from '@/components/Header/Header'
 
 const spaceGrotest = Space_Grotesk({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={cn('bg-background', spaceGrotest.className)}>
+        <Header />
         {children}
       </body>
     </html>

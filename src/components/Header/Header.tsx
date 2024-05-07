@@ -5,8 +5,8 @@ import Nav from '../Navbar/Nav'
 
 const Header = () => {
   return (
-    <header className='py-10'>
-      <MaxWidthWrapper>
+    <header className='py-10 relative'>
+      <MaxWidthWrapper className=''>
         <div className='flex items-center justify-between'>
           {/* LOGO */}
           <div>

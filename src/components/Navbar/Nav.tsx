@@ -10,7 +10,7 @@ const Nav = () => {
 
   return (
     <nav>
-      <div className='flex gap-5'>
+      <div className='flex gap-5 z-30'>
         {navLinks.map((link, index) => (
           <Link
             key={index}

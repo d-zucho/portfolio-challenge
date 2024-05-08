@@ -4,9 +4,9 @@ import Image from 'next/image'
 
 const Skills = () => {
   return (
-    <section className='mt-20 md:mt-40 lg:mt-80'>
+    <section className='mt-20 md:mt-40 lg:mt-80 min-h-[300px] relative'>
       <MaxWidthWrapper>
-        <div className='border-t-2 border-lightCream py-10'>
+        <div className='border-t-2 border-lightCream py-10 relative'>
           {/* Icons Container */}
           <div className='grid grid-cols-2 md:grid-cols-3 justify-around items-center gap-x-3 gap-y-5'>
             {skills.map((skill, index) => (
@@ -23,6 +23,11 @@ const Skills = () => {
             ))}
           </div>
         </div>
+        <img
+          src='/images/pattern-rings.svg'
+          alt=''
+          className='absolute  -right-1/3'
+        />
       </MaxWidthWrapper>
     </section>
   )
